@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Cynthia's Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #49333b;
+      background-color: #fff0f4;
+      text-align: center;
+    }
+
+    header {
+      background: #f5b5c6;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0 0 15px;
+    }
+
+    nav a {
+      color: #49333b;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 420px;
+      background-image:
+        linear-gradient(
+          rgba(65, 35, 50, 0.35),
+          rgba(65, 35, 50, 0.35)
+        ),
+        url("https://images.unsplash.com/photo-1573865526739-10659fec78a5?auto=format&fit=crop&w=1600&q=85");
+
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 19px;
+    }
+
+    .button {
+      background: #e995aa;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+
+    .button:hover {
+      background: #d66d8e;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.92);
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 18px;
+      box-shadow: 0 5px 15px
+                  rgba(180, 100, 130, 0.12);
+    }
+
+    h2 {
+      color: #d36f91;
+    }
+
+    .projects {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      background: #ffe6ee;
+      padding: 20px;
+      border-radius: 12px;
+      width: 220px;
+    }
+
+    .cat {
+      font-size: 55px;
+    }
+
+    footer {
+      background: #f5b5c6;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      nav a {
+        margin: 0 5px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🐾 My Portfolio</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Hello, I'm Cynthia! ♡</h2>
+    <p>Welcome to my personal website.</p>
+    <p>I love cats, coffee, and web design!</p>
+    <a href="#contact" class="button">
+      Contact Me ♡
+    </a>
+  </section>
+
+  <main class="container">
+
+    <section class="card" id="about">
+      <h2>🐱 About Me</h2>
+      <p>Hello! My name is Cynthia.</p>
+      <p>I am learning HTML and CSS.</p>
+      <p>I love cats and creating websites!</p>
+      <div class="cat">🐈 💕</div>
+    </section>
+
+    <section class="card" id="projects">
+      <h2>💻 My Projects</h2>
+
+      <div class="projects">
+
+        <div class="project">
+          <h3>🌸 Project 1</h3>
+          <p>My first HTML website</p>
+        </div>
+
+        <div class="project">
+          <h3>🐾 Project 2</h3>
+          <p>My cat portfolio</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>💌 Contact Me</h2>
+      <p>Email: ｃｈｅｎｑｉａｎ１９９５０９０７＠ｇｍａｉｌ．ｃｏｍ　</p>
+      <p>Thank you for visiting!</p>
+      <div class="cat">🐱</div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>🐾 © 2026 Cynthia's Portfolio ♡</p>
+  </footer>
+
+</body>
+</html>
